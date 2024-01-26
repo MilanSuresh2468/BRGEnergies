@@ -1,31 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body {
-        background-color: #F9F6EE;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 20vh; 
-        margin: 10;
-        flex-direction: column;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRG Energies</title>
+    <style>
+        body {
+            background-color: #F9F6EE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            margin: 10;
+            flex-direction: column;
+        }
 
-h1   {color: #000080; font-family: 'Roboto', sans-serif; }
+        h1 {
+            color: #000080;
+            font-family: 'Roboto', sans-serif;
+        }
 
+        p {
+            color: silver;
+            font-family: 'Roboto', sans-serif;
+        }
 
-p    {color: silver; font-family: 'Roboto', sans-serif;}
-</style>
+        button {
+            background-color: #000080;
+            color: #F9F6EE;
+            padding: 10px 20px;
+            font-family: 'Roboto', sans-serif;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
 
+        button:hover {
+            background-color: #001F40;
+        }
+    </style>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
 
-<h1>BRG Energies</h1>
-<p>ARCGis Map.</p>
+    <h1>BRG Energies</h1>
+    <p>ARCGis Map.</p>
+
+    <!-- Button that goes to a URL -->
+    <button onclick="goToURL()">Visit BRG Energies Website</button>
+
+    <script>
+        function goToURL() {
+            // Specify the URL you want to open
+            var url = 'https://www.brgenergies.com';
+
+            // Open the URL in the current tab
+            window.location.href = url;
+        }
+    </script>
 
 </body>
-
 </html>
